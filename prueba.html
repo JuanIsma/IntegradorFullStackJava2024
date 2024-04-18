@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/styles.css" rel='stylesheet'/>
+ 
+<title>Texto alt sobre la imagen</title>
+<style>
+    .contenedor {
+        position: relative;
+        width: 300px; /* Ancho de la imagen */
+    }
+
+    .imagen {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .texto-alt {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 97%;
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+        color: #fff; /* Color del texto */
+        padding: 5px;
+        text-align: center;
+        font-size: 14px; /* Tamaño de la fuente */
+    }
+</style>
+</head>
+<body>
+ 
+
+<div class="contenedor">
+    <img src="https://image.tmdb.org/t/p/w500//f7QBvIzoWSJw3jWPGnZBc5vwQ0l.jpg" alt="Texto alternativo de la imagen" class="imagen">
+    <div class="texto-alt">
+        Kung Fu Panda 4 (2024)
+    </div>
+
+     </div>
+    <div class="contenedor">
+    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9rk0NJXs1izgJPZwbkSrkiVFWMQ.jpg" alt="Texto alternativo de la imagen 2" class="imagen">
+    <div class="texto-alt">
+        Dune: Parte dos (2024)
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<img src="https://static.vecteezy.com/system/resources/previews/010/973/641/non_2x/movie-poster-cinema-banner-with-popcorn-soda-clapperboard-glowing-cinema-banner-illustration-vector.jpg" alt="The Movie Database (TMDB)" width="154" height="65">
