@@ -195,7 +195,7 @@
 
  .sinScroll {
    overflow: hidden;
-   background-image: url(../master/imagenes/background.jpg); 
+   background-image: url(../imagenes/background.jpg); 
  
  }
 
@@ -433,7 +433,8 @@
     margin-left: 6px;
    position: relative;
    /* Color del texto */
-   color: #fff;  
+   color: #fff; 
+  font-family:  'Times New Roman', Times, serif;
  }
 
  /* -----icono film -------------------------------*/
@@ -546,3 +547,25 @@
 
 
 /*--------------------------- FIN LOGOS ----------------------- */
+
+/*Animación de texto-icono*/
+.moving-text:hover  {
+  position: relative;
+  display: inline-block;
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-8px) rotate(10deg);
+  }
+  50% {
+    transform: translateX(8px) rotate(0deg);
+  }
+  75% {
+    transform: translateX(-8px) rotate(-15deg);
+  }
+}
