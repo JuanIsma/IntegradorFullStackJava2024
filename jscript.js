@@ -1,3 +1,5 @@
+
+
 let slideIndex = 1; // Empezamos en el primer elemento real
 let isTransitioning = false; // Para evitar que se ejecute la transición múltiples veces
 
@@ -40,6 +42,9 @@ function moveSlide(n) {
 setInterval(() => {
     moveSlide(1);
 }, 3000); // Cambiar cada 3 segundos (ajustar según sea necesario)
+
+
+
 
 
  
