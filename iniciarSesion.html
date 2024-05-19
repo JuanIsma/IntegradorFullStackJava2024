@@ -8,6 +8,7 @@
     <title>Inicio</title>
     <link href="css/stylesRegistro.css" rel='stylesheet' />
     <link href="css/styles.css" rel='stylesheet' />
+    <link href="css/cssForm.css" rel='stylesheet' />
 </head>
 
 <body class="sinScroll">
@@ -26,23 +27,25 @@
     <main id="main" class="main">
         <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
 
-            <form class="formulario" action="" method="get">
+            <form class="formulario" id="formulario" action="" method="get">
 
                 <span class="fa--user-circle-o"></span> <!-- Icono login -->
 
                 <h2 class="iniciarSesion">Iniciar Sesión</h2>
-                <div>
-                    <input type="email" placeholder="Email" id="email" name="email">
-                    <div class="error-text"></div>
+                <div class="campo">
+                    <input type="email" placeholder="Correo electrónico" id="email" name="email">
+                    <div id="email-error"  class="error"></div>
                 </div>
-                <div>
+                <div class="campo">
                     <input type="password" placeholder="Contraseña" id="password" name="password">
-                    <div class="error-text"></div>
+                    <div id="password-error"  class="error"></div>
                 </div>
                 <div>
                     <input class="boton" type="submit" value="Iniciar Sesión">
                 </div>
                 <div>
+
+
                     <a id="ayuda" href="registrarse.html">Registrarse</a>
                 </div>
             </form>
@@ -50,7 +53,7 @@
         </div>
     </main>
  
-
+    <script src="javaScripts/scriptValidaForm.js"></script>
 </body>
 
 </html>
