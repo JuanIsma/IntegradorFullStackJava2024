@@ -19,11 +19,12 @@ section {
 }
 
 
-form {
+.formulario {
+    background:-webkit-linear-gradient(top, black,  crimson, black); 
     width: 55vh;
     /* Ajusta el ancho según tu preferencia */
-    padding: 8vh;
- 
+    padding: 7vh;
+    height: 77%;
      border: 1px solid #ccc;  
     border-radius: 1vh;
     text-align: center;
@@ -44,7 +45,7 @@ form {
     height: 20px;
     text-align: center;
     color: #ccc;
-    font-size: 20pt;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -55,7 +56,8 @@ form {
 
 #crearCuenta {
     color: #ccc;
-    font-size: 20pt;
+    font-size: 20px;
+ 
     font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -69,7 +71,7 @@ form {
     /* Los elementos ocupan todo el ancho disponible */
     padding: 4px;
     /* Espacio interior de los elementos */
-    font: normal 16px/normal Verdana, Geneva, sans-serif;
+    font: normal 12px/normal Verdana, Geneva, sans-serif;
     border-radius: 10px;
     border: 2px solid #048bd4;
 
@@ -90,7 +92,7 @@ form {
     /* Los elementos ocupan todo el ancho disponible */
     padding: 5px;
     /* Espacio interior de los elementos */
-    font: normal 14px/normal Verdana, Geneva, sans-serif;
+    font: normal 12px/normal Verdana, Geneva, sans-serif;
     border-radius: 10px;
     border: 2px solid #048bd4;
 }
@@ -105,7 +107,7 @@ form {
     /* Los elementos ocupan todo el ancho disponible */
     padding: 5px;
     /* Espacio interior de los elementos */
-    font: normal 14px/normal Verdana, Geneva, sans-serif;
+    font: normal 12px/normal Verdana, Geneva, sans-serif;
     border-radius: 10px;
     border: 2px solid #048bd4;
 }
@@ -117,7 +119,7 @@ form {
     display: block;
     padding: 15px;
     background-color: hsl(115, 37%, 56%);
-    font: bold 14px/normal Verdana, Geneva, sans-serif;
+    font: bold 12px/normal Verdana, Geneva, sans-serif;
     border-radius: 15px;
     margin-bottom: 10px;
     color: beige;
@@ -135,7 +137,7 @@ select {
     /* Los elementos ocupan todo el ancho disponible */
     padding: 5px;
     /* Espacio interior de los elementos */
-    font: normal 16px/normal Verdana, Geneva, sans-serif;
+    font: normal 12px/normal Verdana, Geneva, sans-serif;
     border-radius: 10px;
     border: 2px solid #048bd4;
 }
@@ -151,7 +153,8 @@ input {
 }
 
 .error {
-    color: #fff;  
+    color: #fff; 
+    font-size: 12px; 
 }
 
 .oculto {
@@ -162,4 +165,6 @@ input {
     color: #ccc;
 }
 
- 
+input[type="checkbox"]:focus {
+    outline: none;
+  }
