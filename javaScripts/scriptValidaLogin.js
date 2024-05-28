@@ -24,6 +24,7 @@ function validarFormulario() {
   let esValido = true;
 
   // Validar cada campo
+  
   if (email === "") {
     mostrarError("email", "Por favor ingresa tu email");
     esValido = false;
