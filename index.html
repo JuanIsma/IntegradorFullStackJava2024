@@ -36,23 +36,38 @@
           </section>  
     <section id="tendencias" class="buscadorPrincipal ">
         <h2 class="tituloSection">¿Qué quieres ver hoy?</h2>
-        <form class="buscadorPeliculas">
-            <input class="inputBuscador" type="text" placeholder="Buscar...">
-            <input class="botonBuscador" type="submit" value="Buscar">
+        <form class="buscadorPeliculas" id="buscadorPeliculas"  >
+            <input class="inputBuscador" id = "input-busqueda" type="text" placeholder="Buscar película..."  autocomplete="off">
+            <input class="botonBuscador" id="botonBuscar"  type="submit" value="Buscar">
+             
         </form>
-        <br>  
-
+        <br>    
+             <form>
+                 
+                <!-- Ventana modal -->
+                <div id="myModal" class="modal"> 
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div id="trailer-container"></div>
+                    </div>
+                </div>
+                <!--FIN Ventana modal --> 
+            </form>
     </section> 
+ 
     <hr>
-    <h1 id="textPelicula">GRATIS | Películas Online</h1>
+
+    <div id="resultados"  class="oculto"></div>
+    <h1 id="textPelicula">  GRATIS | Películas Online</h1>
+     <!-- CARGA LAS PELICULAS  -->
     <section class="peliculasOn"> 
      <div class="grid-container"> 
         
      <div class="grid-item contenedor" id ="peliculasonline" ></div>   
          </div>
         <div class="paginacion"> 
-        <button id = "btnAnterior" class="boton anterior">Anterior</button>
-        <button id = "btnSiguiente" class="boton siguiente">Siguiente</button>
+        <button id = "botonAnterior" class="boton anterior">Anterior</button>
+        <button id = "botonSiguiente" class="boton siguiente">Siguiente</button>
     </div>
     </section>
 </main>
@@ -65,13 +80,18 @@
             <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
             <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
             <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+            <li id="derechosReservados"><a>©Zona-Films.Todos los derechos reservados.</a></li>
         </ul>
     </nav>
     <div >          
-            <ul>
+            <ul>            
                 <li> <a class="logos--facebook" href="https://facebook.com/" target="_blank"></a></li>
                 <li><a class="fa6-brands--square-x-twitter" href="https://twitter.com/" target="_blank"></a></li>
                 <li><a class="skill-icons--instagram" href="https://instagram.com/" target="_blank"> </a></li>
+                <!-- Enlace para subir -->
+                <a href="#main" class="flechaArriba">
+                    <img src="/imagenes/flecha-hacia-arriba.png" alt="ir arriba flecha">
+                </a>
             </ul>
     </div>
   </footer>

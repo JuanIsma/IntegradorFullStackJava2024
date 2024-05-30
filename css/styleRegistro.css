@@ -20,7 +20,7 @@ section {
 
 
 .formulario {
-    background:-webkit-linear-gradient(top, black,  crimson, black); 
+    background:-webkit-linear-gradient(top, black,  #7e0e29, black); 
     width: 55vh;
     /* Ajusta el ancho según tu preferencia */
     padding: 7vh;
@@ -113,12 +113,15 @@ section {
 }
 
 
+.formulario input[type="submit"]:hover {
+ background-color:  #296e53;
+}
 
 .formulario input[type="submit"] {
     width: 82%;
     display: block;
     padding: 15px;
-    background-color: hsl(115, 37%, 56%);
+ background-color: #1a5f44;
     font: bold 12px/normal Verdana, Geneva, sans-serif;
     border-radius: 15px;
     margin-bottom: 10px;

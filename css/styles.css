@@ -13,7 +13,7 @@
    /* Establece la imagen como fondo */
   
    /* Ajusta el tamaño y posición del fondo */
-   background:-webkit-linear-gradient(top, black,  crimson, black); 
+   background:-webkit-linear-gradient(top, black,  #7e0e29, black); 
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -28,7 +28,11 @@
  
  }
 
-
+hr{
+   
+    width: 50%; /* Modifica el ancho del hr al 50% del ancho del contenedor */
+  
+}
 
 /*----------------- Estilos para WebKit (Safari y Chrome) -----------*/
 ::-webkit-scrollbar {
@@ -42,11 +46,14 @@
 
 /*---------------------------------------------------------------------*/
 
-
+p{
+  color: white;
+  text-align: justify; /* Alinear texto justificado */
+}
 
 
  .header {
-  background:-webkit-linear-gradient(top,  crimson, black);
+  background:-webkit-linear-gradient(top,  #7e0e29, black);
    position: sticky;
    top: 0;
    height: 11vh;
@@ -117,7 +124,7 @@
  }
 
   
-#btnSiguiente:hover  ,#btnAnterior:hover{
+#botonSiguiente:hover  ,#botonAnterior:hover{
   transform: scale(1.2);
 }
 
@@ -166,7 +173,7 @@
 
 
  #pie {
-  background:-webkit-linear-gradient(top, black, crimson);
+  background:-webkit-linear-gradient(top, black, #7e0e29);
    padding: 0%;
    position: static;
    bottom: 0;
@@ -179,7 +186,7 @@
    /* Añadido para centrar verticalmente */
    z-index: 999;
    height: 11vh;
-   font-size: 18px;
+   font-size: 14px;
  
   
  }
@@ -192,9 +199,9 @@
    margin-top: 1%;
    text-align: center;
  margin-block-end: 5%;
- 
- 
  }
+
+
 
  
 
@@ -213,68 +220,8 @@
 
 
 
- /*-------------CARRUSEL----------------------------------------- */
-
- .carousel-title {
-  color: #FFFFFF;
-  text-align: left;
-  padding: 2px;
-  font-size: 18px;
-  margin-top: 2.5%;
-  text-align: center;    
-  }
-
-
-
- .carousel-container {
-   width: 95%;
-   /* Reducir el ancho del contenedor del carrusel */
-    
-   overflow: hidden;
-   position: relative;
-   /* Agregar márgenes a los lados del contenedor */
-   margin-top: -7cap;
-   margin-left: 47px;
-   margin-right: 20px;
-  }
-
- .carousel {
-   display: flex;
-   transition: transform 0.5s ease;  
- }
-
-
- .carousel img {
-   width: 20.3%;
-   height: auto;
-   margin-top: 120px;
-   /* ajusta este valor según sea necesario */
-   margin-right: 10px;
-   /* Con este código, habrá un margen de 10px entre cada imagen en el carrusel.*/
-   margin: 100px 0px 0;
-   /* margen superior de 120px, margen derecho e izquierdo de 10px, sin margen inferior */
- }
-
- .prev,
- .next {
-   cursor: pointer;
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   background-color: rgba(0, 0, 0, 0.5);
-   color: white;
-   padding: 40px;
-   z-index: 1;
- }
-
- .prev {
-   left: 0;
- }
-
- .next {
-   right: 0;
- }
-
+ -------------CARRUSEL-----------------------------------------
+ 
 
  /*------ Efecto de movimiento en imagenes------ */
  .carousel img:hover {
@@ -329,7 +276,7 @@
 .titulo2{
   font-size:20px;
   color: #fff;
-   
+  transform: translateY(23px); /* Mueve el elemento 23 píxeles hacia arriba */
 }
 
 
@@ -342,18 +289,30 @@
   font-family:  'Times New Roman', Times, serif;
  color: #fff;
  
+ 
 }
 
+#derechosReservados{
+  margin-top: 0.7%;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+ color: rgb(255, 255, 255);
+ line-height: 1.6;
+ font-weight: 300; /* Resumen y detalles con letra delgada */
+}
 
 .tituloResumen {
   margin-top: -18%;
   margin-bottom: 20%;
   margin-right: 20%;
   margin-left: 20%;
-  font-size: 14px;
-  font-family:  'Times New Roman', Times, serif;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
  color: rgb(255, 255, 255);
-  
+ line-height: 1.6;
+ font-weight: 300; /* Resumen y detalles con letra delgada */
+text-align: center;
+letter-spacing: 0.5px; /* Espaciado entre caracteres*/
 }
 
 
@@ -386,6 +345,12 @@
    /* Escalar la imagen al hacer hover */
  }
 
+
+
+ .grid-container{
+margin-left: 6vh;
+margin-right: 2vh; 
+}
  /*................................................................*/
 
 
@@ -413,6 +378,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 1%;
+ 
   
 }
  
@@ -441,18 +407,25 @@
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
+
+  /*cuando nos ponemos encima de link*/
+  .botonBuscador:hover{
+    background: crimson; 
+   } 
  /*................................................................*/
 
 .inputBuscador {
-  border: 2px solid white;
+  border: 3px solid rgb(3, 0, 0);
   border-radius: 18px;
-  color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   height: 40px;
   margin: 10px 1px;
   outline: none;
   padding: 0px 20px;
   width: 580px;
+  font-family:  'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif, Courier, monospace;
+ 
 }
 
  /*----------------Texto sobre imagen ----------------------------- */
@@ -474,7 +447,12 @@
  /*................................................................*/
   
  
-
+#botonSiguiente:hover , #botonAnterior:hover{
+    
+      background: crimson; 
+      transform: scale(1.2);
+    
+}
 
 
 
@@ -561,9 +539,13 @@ text-align: center;
  font-weight: 700;
  text-decoration: none;
  border: 2px solid white;
- transition: transform 0.3s, box-shadow 0.3s;
  margin-top: 4rem;
  padding-right: 47px;
+  
+}
+
+.botonRegistrarse:hover{
+  transform: scale(1.1);
 }
  
 
@@ -600,19 +582,20 @@ text-align: center;
   padding-left: 1cap;
   transition: transform 0.3s, box-shadow 0.3s;
  
-  
-
 }
-
+#btnSiguiente:hover , #btnAnterior:hover{
+background-color: crimson;
+transform: scale(1.2);
+}
 
 .peliculasOn{
     margin-left: -4cap;
     text-align: center;
     margin-top: 10px;
+     
 }
 
- 
-
+  
 .poster{
   width: 50%;
  
@@ -652,6 +635,18 @@ text-align: center;
 }
 
 
+
+   a.flechaArriba {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+       color: white;  
+        cursor: pointer;  
+  }
+ 
+
+
+
 /*--------------------------- FIN LOGOS ----------------------- */
 
 /*Animación de texto-icono*/
@@ -678,4 +673,139 @@ text-align: center;
 
 
 
+
+.oculto {
+  display: none;
+}
+
+.peliculasOn {
+  display: block;
+}
+
+
+
+/*========stylos para el buscador==============*/
+
  
+.pelicula img {
+  max-width: 150px;
+   margin-top: 20px;
+   border-radius: 5px;
+   border: 3px solid rgb(255, 255, 255);
+}
+/* Estilos para la ventana modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px; 
+}
+.modal-content {
+  background-color: black;
+  margin: 5% auto; 
+  padding: 20px;
+ border-radius: 3vh;
+  width: 80%; 
+  max-width: 900px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#resultados{
+  margin-left: 11%;
+  margin-right: 11%;
+  border: 1px solid rgba(221, 221, 221, 0.5); /* color #ddd con 50% de transparencia */
+   
+}
+
+ 
+#botonTrailer:hover{
+  background-color: crimson;}
+ 
+
+
+#botonTrailer{
+  background-color: black;
+  display: inline-block;
+  color: white;
+  height: 40px;
+  margin: 1vh 5vh;
+  padding-left:  2vh;
+  padding-right: 3vh;
+  border-radius: 18px;
+  font-size: 1.2rem;
+  border: 2px solid white;
+}
+
+#tituloPeliBuscada{
+  color: white;
+  margin-left: 4vh;
+  margin-top: 2vh;
+}
+
+#peliResumen{
+  
+ font-size: 17px;
+ margin-top: auto;
+ margin-block-end: 10px;
+ margin-left: 5vh;
+ margin-right: 9vh;
+ margin-top: 1vh;
+ margin-block-end: 1vh;
+ letter-spacing: 0.1px; /*Espaciado entre caracteres*/
+ line-height: 1.4;  /*Espaciado entre lineas*/
+}
+  
+ 
+  #peliBuscada{
+  border-top: 1px solid rgba(221, 221, 221, 0.5);
+   
+   
+ }  
+
+
+
+ .movie-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.movie-poster {
+  max-width: 150px; /* Ajusta el tamaño de la imagen según sea necesario */
+  margin-right: 20px; /* Espacio entre la imagen y el resumen */
+}
+
+aside {
+  max-width: 900vh; /* Ajusta el ancho máximo del resumen según sea necesario */
+}
+
+
+#margeFotoBuscada{
+  margin-left: 20vh;
+}
+
+#fechaLanzamiento{
+  margin-left: 4vh;
+}
+#puntuacion{
+  margin-top: 1vh;
+  margin-left: 4vh;
+}
