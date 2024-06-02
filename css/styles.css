@@ -226,6 +226,7 @@ p{
  /*------ Efecto de movimiento en imagenes------ */
  .carousel img:hover {
    transform: scale(1.1);
+ 
    /* escala de imagen al pasar el mouse */
  }
 
@@ -287,10 +288,18 @@ p{
   margin-left: 20%;
   font-size:23px;
   font-family:  'Times New Roman', Times, serif;
- color: #fff;
- 
- 
+  color: #fff;  
 }
+
+
+
+
+ 
+
+
+
+
+
 
 #derechosReservados{
   margin-top: 0.7%;
@@ -299,6 +308,7 @@ p{
  color: rgb(255, 255, 255);
  line-height: 1.6;
  font-weight: 300; /* Resumen y detalles con letra delgada */
+ position: relative; /* Posicionar el elemento de manera absoluta */
 }
 
 .tituloResumen {
@@ -313,40 +323,38 @@ p{
  font-weight: 300; /* Resumen y detalles con letra delgada */
 text-align: center;
 letter-spacing: 0.5px; /* Espaciado entre caracteres*/
+ 
 }
 
 
 
- .grid-item {
- 
-   /* Ajusta el ancho del contenedor de la imagen al 100% */
-   height: auto;
-   /* Altura automática para mantener la proporción */
-   border-radius: 10px;
-   transition: transform 0.3s ease;
-   /* Transición suave */
-   
- }
+  
 
  .grid-item img {
-   
    /* Ajusta el ancho de las imágenes al 100% del contenedor */
    height: auto;
    /* Altura automática para mantener la proporción */
    border-radius: 10px;
-   transition: transform 0.3s ease;
    /* Transición suave */
+   transition: transform 0.3s ease ; /* Agregar transición suave para transformación y opacidad */
  
  }
 
- .grid-item img:hover   {
+
+
+
+ .grid-item img:hover {
   font-size: 12px; /* Tamaño de texto aumentado */
-   transform: scale(1.1);
-   /* Escalar la imagen al hacer hover */
- }
+  transform: scale(0.9);
+  box-shadow: 1px 0 20px white, -1px 0 20px white;
+ 
+}
 
+   
+ 
+ 
 
-
+ 
  .grid-container{
 margin-left: 6vh;
 margin-right: 2vh; 
@@ -384,7 +392,7 @@ margin-right: 2vh;
  
 
 .tituloSection {
-  font-size: 2.2rem;
+  font-size: 4vh;
   padding-right: 10%;
   
 }
@@ -423,7 +431,9 @@ margin-right: 2vh;
   margin: 10px 1px;
   outline: none;
   padding: 0px 20px;
-  width: 580px;
+  width: 500px;
+  min-width: 10%; /* Ajusta según tus necesidades */
+ 
   font-family:  'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif, Courier, monospace;
  
 }
@@ -514,7 +524,7 @@ text-align: center;
 
  /*................................................................*/
  .tituloPrincipal {
-  font-size: 5rem;
+  font-size: 4vw;
   font-weight: 700;
   margin-top: 1rem;
   color: white;
@@ -569,7 +579,7 @@ text-align: center;
 .boton  {
   border: 2px solid white;
   box-sizing: content-box;
-  margin-top: 50px;
+  margin-top: 1vh;
   margin-left: 39px;
   background-color: black;
   color: #ffffff;
@@ -678,10 +688,7 @@ transform: scale(1.2);
   display: none;
 }
 
-.peliculasOn {
-  display: block;
-}
-
+ 
 
 
 /*========stylos para el buscador==============*/
