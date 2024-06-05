@@ -87,4 +87,11 @@ imagenesPelicula.forEach((imagen) => {
 
 
 
- 
+   // *** Subir pagina hacia arriba al dar un evento click ***
+document.querySelector('.flechaArriba').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+  });
