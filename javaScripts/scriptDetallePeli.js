@@ -42,22 +42,23 @@ const mostrarDetallesPelicula = (pelicula) => {
     const htmlDetalle = `
  
     <div class="detallepeliculainfo">
-    <div class="detallepeliculatitulo"><p><strong>Titulo:</strong> ${pelicula.title}</p></div>
+ 
     <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt="${pelicula.title}">
     <div class="detallepeliculainfo-text">
+    <div class="detallepeliculatitulo"><p><strong>Ver Película:</strong> ${pelicula.title}</p></div>
+    <div class="reproductor"   id="otro-contenedor">
+    <video controls  id="videoPlayer">
+    <source src="https://dl.dropboxusercontent.com/scl/fi/pv1s8bgbgmm5tl5wky9ag/Metro-Goldwyn-Mayer-Intro-HD-mp4-on-Vimeo.mp4?rlkey=o6czi30db6vb57szfpeya7dyo&st=v5qw2ga0&dl=0" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+    </video>
+    </div>
+        <p id="info-peli"><strong>Género:</strong> ${primerGenero}</p>
+        <p><strong>Duración:</strong> ${pelicula.runtime} minutos</p>
         <p><strong>Fecha de Lanzamiento:</strong> ${pelicula.release_date}</p>
-        <p><strong>Género:</strong> ${primerGenero}</p>
         <p><strong>Sinopsis:</strong> ${pelicula.overview}</p>
         <p><strong>Popularidad:</strong> ${pelicula.popularity}</p>
         <p><strong>Total de Votos:</strong> ${pelicula.vote_count}</p>
-        <div class="reproductor">
-        <video controls  id="videoPlayer">
-        <source src="https://dl.dropboxusercontent.com/scl/fi/pv1s8bgbgmm5tl5wky9ag/Metro-Goldwyn-Mayer-Intro-HD-mp4-on-Vimeo.mp4?rlkey=o6czi30db6vb57szfpeya7dyo&st=v5qw2ga0&dl=0" type="video/mp4">
-        Tu navegador no soporta el elemento de video.
-        </video>
-        </div>
- 
-
+  
     </div>
 </div>
  

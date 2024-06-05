@@ -1,3 +1,4 @@
+//======================================================= INICIO =====================================================================================
 
 const key = "192e0b9821564f26f52949758ea3c473";
 const apiKey = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyZGI2ZmZhZTNlMTUxYjc1ZDQ2NDQxN2M1YTJhZGJmNCIsInN1YiI6IjY2MjQzZmYxN2E5N2FiMDE3ZDhjYzgxZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.5X3tBw3DNv7kd1Y92t2gSVejwDZorJAxxeMj9sYXR64';
@@ -84,8 +85,17 @@ document.getElementById('botonSiguiente').addEventListener('click', paginaSiguie
 document.getElementById('botonAnterior').addEventListener('click', paginaAnterior);
 
 
+//=============================================================================================================================================
 
-//================================================ BUSCAR PELICULA ===============================================================================================
+
+
+
+
+
+
+
+
+//================================================ BUSCAR PELICULA =============================================================================
 
  
 document.getElementById('buscadorPeliculas').addEventListener('submit', function(event) {
@@ -153,7 +163,10 @@ function mostrarResultados(data) {
             const imagen = `<img src="${imagenSrc}" alt="${pelicula.title}" class="movie-poster">`;
             peliculaDiv.innerHTML = `
             <div class="movie-container">
-               <article id="margenFotoBuscada">${imagen}</article>
+            
+               <article id="margenFotoBuscada">
+               <a  href="detalle.html?id=${pelicula.id}"  >
+               ${imagen}</article> </a>
                <aside> 
                  <h2 id="tituloPeliBuscada">${pelicula.title}</h2> 
                  <p id="peliResumen">${pelicula.overview}</p>
@@ -205,10 +218,7 @@ function mostrarResultados(data) {
 }
 
 
-
-
-
-
+ 
 
 
 // *** Función para obtener y mostrar el tráiler de la película en una ventana modal ***
@@ -283,3 +293,6 @@ document.querySelector('.flechaArriba').addEventListener('click', function(event
         behavior: 'smooth'
     });
 });
+
+
+//=========================================================== FIN ==================================================================================

@@ -1,6 +1,6 @@
 
 
-//================================================= API de Películas más valoradas =========================================================================
+//================================================= API de Películas más Populares =========================================================================
 const key = "192e0b9821564f26f52949758ea3c473";
 // Función para truncar el texto a un máximo de caracteres
 function mostrarTextoHasta(texto, maxCaracteres) {
@@ -60,7 +60,8 @@ function mostrarTextoHasta(texto, maxCaracteres) {
           peliculas += `
                       <div  class="pelicula carusel-item"  >
                           <h4 class="titulo2">${añoLanzamiento}</h4><br>
-                          <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"   >
+                          <a href="detalle.html?id=${pelicula.id}"  >
+                          <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt=${pelicula.title}   ></a>
                           <h3 class="tituloPelicula">${pelicula.title}</h3>
                           <h3 class="tituloResumen">${overviewTruncado}</h3>
                       </div>
@@ -86,11 +87,10 @@ function mostrarTextoHasta(texto, maxCaracteres) {
   
   //==========================================================================================================================
    
+
+
   // Inicializa cargando las películas populares
   cargarPeliculasPopulares();
-  
-  
-  //=================================================
   
   
   
@@ -109,3 +109,12 @@ function mostrarTextoHasta(texto, maxCaracteres) {
     btnSiguiente.addEventListener("click", desplazarArriba);
   });
   
+
+  // *** Subir pagina hacia arriba al dar un evento click ***
+document.querySelector('.flechaArriba').addEventListener('click', function(event) {
+  event.preventDefault();
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+});
